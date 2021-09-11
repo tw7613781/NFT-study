@@ -1,0 +1,26 @@
+{
+  "name": "nft-study",
+  "version": "1.0.0",
+  "description": "## Concept",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tw7613781/nft-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tw7613781/nft-study/issues"
+  },
+  "homepage": "https://github.com/tw7613781/nft-study#readme",
+  "devDependencies": {
+    "truffle": "^5.4.10"
+  }
+}
