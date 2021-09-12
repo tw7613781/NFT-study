@@ -9,6 +9,9 @@ const getBlockchain = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
 
+        if (window.ethereum.networkVersion !== '3') {
+          return reject(new Error('metamask is not in the ropsten network'));
+        }
         const nft = new Contract(
           NFT.networks[window.ethereum.networkVersion].address,
           NFT.abi,

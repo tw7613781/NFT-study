@@ -27,6 +27,8 @@ export default {
     try {
       if (process.client) {
         const { nft } = await getBlockchain()
+        if (!nft)
+          return console.log('connot find metamask to connect ethereum network')
         const tokenURI = await nft.tokenURI(0)
         console.log(`got NFT uri from Chain: ${tokenURI}`)
         const { data } = await this.$axios.get(tokenURI)
@@ -34,7 +36,7 @@ export default {
         this.nft = data.result
       }
     } catch (err) {
-      console.log(err)
+      console.log(err.message)
     }
   },
 }

@@ -32,6 +32,8 @@ npm run migrate
 ```
 Currently the target Ethereum blockchain is ropsten chain, you can change it in truffle-config.js. After configured your own mnemonic words in .secret file, you can run the above command to deploy the smart contract to the target chain and intial a NFT creation with ID 0.
 
+The smart contract at ropsten network: [https://ropsten.etherscan.io/address/0xa48E498D467cef99ca714700506f4Eeb3B34f50C](https://ropsten.etherscan.io/address/0xa48E498D467cef99ca714700506f4Eeb3B34f50C)
+
 The smart contract will return the NFT uri to any request with specific ID. 
 ### Backend
 
