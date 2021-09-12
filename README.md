@@ -22,3 +22,27 @@ transferFrom
 ## Architecture
 
 ![The system architecture](./docs/system_arch.png)
+
+## How to run the code
+
+### Smart contract
+
+```
+npm run migrate
+```
+Currently the target Ethereum blockchain is ropsten chain, you can change it in truffle-config.js. After configured your own mnemonic words in .secret file, you can run the above command to deploy the smart contract to the target chain and intial a NFT creation with ID 0.
+
+The smart contract will return the NFT uri to any request with specific ID. 
+### Backend
+
+```
+npm run start
+```
+The server is a HTTP API server to serve the details meta data and the binary file.
+
+### Frontend
+
+```
+npm run dev
+```
+The client connects to Etherem network with metamask and download the nft meta data, binary file, finaly display it. 
