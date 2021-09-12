@@ -22,5 +22,8 @@
   "homepage": "https://github.com/tw7613781/nft-study#readme",
   "devDependencies": {
     "truffle": "^5.4.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.1"
   }
 }
