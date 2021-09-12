@@ -5,7 +5,7 @@ contract NFT is ERC721 {
     uint256 public nextTokenId;
     address public admin;
 
-    constructor() ERC721("Study NFT", "NFT") {
+    constructor() ERC721("Study NFT", "SNFT") {
         admin = msg.sender;
     }
 
