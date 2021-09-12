@@ -4,7 +4,7 @@ import NFT from './contracts/NFT.json';
 const getBlockchain = () => {
   return new Promise((resolve, reject) => {
     window.addEventListener('load', async () => {
-      if (window.ethereum) {
+      if (window && window.ethereum) {
         await window.ethereum.enable();
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
